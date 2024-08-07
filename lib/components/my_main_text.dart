@@ -96,8 +96,7 @@ class _MyMainTextState extends State<MyMainText>
                                 widget.text == "SERVICES"
                         ? -15 - 60
                         : -15,
-                    child: AnimatedOpacity(
-                      duration: const Duration(milliseconds: 250),
+                    child: Opacity(
                       opacity: _animationController.value,
                       child: Text(
                         widget.text,
